@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <div class="dashboard-header premium-header">
+        <div class="company-name">
+          <h2>MaestroMinds</h2>
+        </div>
+        <div class="profile profile-top-right">
+          <img
+            src="../assets/icons/profile.svg"
+            alt="Profile"
+            class="profile-icon"
+          />
+          <div class="profile-dropdown">
+            <div class="dropdown-content">
+              <a href="#">Profile</a>
+              <a href="#">Logout</a>
+            </div>
+          </div>
+        </div>
+        <div class="section-header">
+          <h1>Welcome, User</h1>
+          <p>Here’s your personalized dashboard</p>
+        </div>
+      </div>
+      <div class="dashboard-content">
+        <div class="dashboard-options">
+          <div class="option-card">
+            <div class="card-header">
+              <h3>Profile Details</h3>
+              <img
+                src="../assets/icons/edit.svg"
+                alt="Edit"
+                class="card-icon"
+              />
+            </div>
+            <p>Complete or update your personal information</p>
+            <a href="details.html" class="card-button">Proceed</a>
+          </div>
+          <div class="option-card">
+            <div class="card-header">
+              <h3>Current Openings</h3>
+              <img
+                src="../assets/icons/briefcase.svg"
+                alt="Openings"
+                class="card-icon"
+              />
+            </div>
+            <p>View available positions and apply</p>
+            <a href="openings.html" class="card-button">Explore</a>
+          </div>
+          <!-- Resume Uploader Card -->
+          <div class="option-card">
+            <div class="card-header">
+              <h3>Resume Uploader</h3>
+              <img
+                src="../assets/icons/upload.svg"
+                alt="Upload Resume"
+                class="card-icon"
+              />
+            </div>
+            <form>
+              <div class="input-group">
+                <label for="resume-upload">Upload Resume (PDF/DOCX)</label>
+                <input
+                  type="file"
+                  id="resume-upload"
+                  name="resume-upload"
+                  accept=".pdf,.doc,.docx"
+                  required
+                />
+              </div>
+              <button type="submit" class="card-button">Upload</button>
+            </form>
+          </div>
+          <!-- Next Test Schedules Card -->
+          <div class="option-card">
+            <div class="card-header">
+              <h3>Next Test Schedules</h3>
+              <img
+                src="../assets/icons/calendar.svg"
+                alt="Test Schedule"
+                class="card-icon"
+              />
+            </div>
+            <ul class="test-schedule-list modern-schedule-list">
+              <li>
+                <div class="schedule-info">
+                  <strong>Technical Test:</strong> 12th June, 10:00 AM
+                </div>
+                <a href="#" class="meet-join-button">Click to Join Meet</a>
+              </li>
+              <li>
+                <div class="schedule-info">
+                  <strong>HR Interview:</strong> 15th June, 2:00 PM
+                </div>
+                <a href="#" class="meet-join-button">Click to Join Meet</a>
+              </li>
+              <li>
+                <div class="schedule-info">
+                  <strong>Managerial Round:</strong> 20th June, 11:00 AM
+                </div>
+                <a href="#" class="meet-join-button">Click to Join Meet</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

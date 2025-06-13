@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fill Your Details - MaestroMinds</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <div class="dashboard-header">
+        <div class="company-name">
+          <h2>MaestroMinds</h2>
+        </div>
+        <div class="profile">
+          <span>Welcome,User</span>
+          <div class="profile-dropdown">
+            <img
+              src="../assets/icons/user-circle.svg"
+              alt="Profile"
+              class="profile-icon"
+            />
+            <div class="dropdown-content">
+              <a href="#">Profile Settings</a>
+              <a href="#">Logout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-container">
+        <div class="form-header">
+          <h2>Personal Information</h2>
+          <p>Please complete your profile details</p>
+        </div>
+
+        <form class="user-details-form">
+          <div class="form-row">
+            <div class="input-group half-width">
+              <label for="full-name">Full Name</label>
+              <input
+                type="text"
+                id="full-name"
+                name="full-name"
+                placeholder="John Doe"
+                required
+              />
+            </div>
+
+            <div class="input-group half-width">
+              <label for="employee-id">Employee ID</label>
+              <input
+                type="text"
+                id="employee-id"
+                name="employee-id"
+                placeholder="EMP-XXXX"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="input-group half-width">
+              <label for="department">Department</label>
+              <input
+                type="text"
+                id="department"
+                name="department"
+                placeholder="Human Resources"
+                required
+              />
+            </div>
+
+            <div class="input-group half-width">
+              <label for="designation">Designation</label>
+              <input
+                type="text"
+                id="designation"
+                name="designation"
+                placeholder="HR Manager"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="input-group half-width">
+              <label for="join-date">Joining Date</label>
+              <input type="date" id="join-date" name="join-date" required />
+            </div>
+
+            <div class="input-group half-width">
+              <label for="location">Location</label>
+              <input
+                type="text"
+                id="location"
+                name="location"
+                placeholder="New York"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="input-group full-width">
+              <label for="bio">Bio</label>
+              <textarea
+                id="bio"
+                name="bio"
+                rows="4"
+                placeholder="Tell us about yourself..."
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="input-group full-width">
+              <label for="skills">Skills</label>
+              <input
+                type="text"
+                id="skills"
+                name="skills"
+                placeholder="Enter skills separated by commas"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button type="button" class="secondary-button">Cancel</button>
+            <button type="submit" class="primary-button">Save Details</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="dashboard-footer">
+        <p>© 2025 Acme Corporation. All rights reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>
